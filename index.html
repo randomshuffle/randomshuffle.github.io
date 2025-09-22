@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anubhav Baweja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .section {
+            padding: 2rem 1rem;
+        }
+        .section:nth-of-type(even) {
+            background-color: #f9fafb; /* light gray */
+        }
+        .publication-item, .teaching-item {
+            border-left: 3px solid #3b82f6; /* blue-500 */
+            padding-left: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                Anubhav Baweja
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                <a href="#publications" class="text-gray-600 hover:text-blue-500 transition duration-300">Publications</a>
+                <a href="#preprints" class="text-gray-600 hover:text-blue-500 transition duration-300">Preprints</a>
+                <a href="#teaching" class="text-gray-600 hover:text-blue-500 transition duration-300">Teaching</a>
+            </div>
+            <!-- Mobile Menu Button (Optional) -->
+            <div class="md:hidden">
+                <!-- You can add a hamburger menu icon and logic here if needed -->
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <img src="pic.jpg" alt="Anubhav Baweja" class="rounded-full h-48 w-48 md:h-64 md:w-64 object-cover shadow-lg">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h1 class="text-3xl font-bold mb-2">Anubhav Baweja</h1>
+                    <p class="text-lg text-gray-600 mb-3">PhD Student at University of Pennsylvania</p>
+                    <p class="text-base mb-3">
+                        I am a PhD student at University of Pennsylvania, advised by <a href="https://pratyushmishra.com/" class="text-blue-600 hover:underline">Pratyush Mishra</a> and <a href="https://www.cis.upenn.edu/~kannan/" class="text-blue-600 hover:underline">Sampath Kannan</a>.
+                        My research interests lie at the intersection of cryptography, streaming algorithms, and sublinear algorithms.
+                        A lot of my recent work has focused on hash-based proof systems.
+                    </p>
+                    <p class="text-base mb-3">
+                        I obtained my BS and MS in computer science from Carnegie Mellon University in 2021, where I was advised by <a href="https://www.cs.cmu.edu/~dwoodruf/" class="text-blue-600 hover:underline">David Woodruff</a> and <a href="https://www.cs.cmu.edu/~guyb/" class="text-blue-600 hover:underline">Guy Blelloch</a>.
+                        Before starting my PhD, I worked at Citadel Securities as a quantitative research analyst for two years.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://scholar.google.com/citations?user=Wt9N4FgAAAAJ&hl=en" class="text-blue-600 hover:underline">Google Scholar</a>
+                        <a href="https://dblp.org/pid/192/1642.html" class="text-blue-600 hover:underline">DBLP</a>
+                        <a href="https://www.linkedin.com/in/abaweja64" class="text-blue-600 hover:underline">LinkedIn</a>
+                    </div>
+                    <p class="mt-4 font-mono text-gray-700">abaweja [at] upenn [dot] edu</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Publications</h2>
+                <div class="max-w-4xl mx-auto">
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">Time-Space Trade-Offs for Sumcheck</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <span class="text-md text-gray-700 font-semibold">[TCC 2025]</span>
+                                <a href="https://eprint.iacr.org/2025/1473" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Alessandro Chiesa, Elisabetta Fedele, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri, Andrew Zitek-Estrada</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">Average-Distortion Sketching</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <span class="text-md text-gray-700 font-semibold">[FOCS 2025]</span>
+                                <a href="https://arxiv.org/abs/2411.05156" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1">Yiqiao Bao, <strong>Anubhav Baweja</strong>, Nicolas Menand, Erik Waingarten, Nathan White, Tian Zhang</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">An Efficient Semi-Streaming PTAS for Tournament Feedback Arc Set with Few Passes</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <span class="text-md text-gray-700 font-semibold">[ITCS 2022]</span>
+                                <a href="https://arxiv.org/abs/2107.07141" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Justin Jia, David Woodruff</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                             <h3 class="text-lg">Efficient parallel self-adjusting computation</h3>
+                             <div class="flex-shrink-0 whitespace-nowrap">
+                                <span class="text-md text-gray-700 font-semibold">[SPAA 2021]</span>
+                                <a href="https://arxiv.org/abs/2105.06712" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1">Daniel Anderson, Guy Blelloch, <strong>Anubhav Baweja</strong>, Umut Acar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preprints Section -->
+        <section id="preprints" class="section bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Preprints</h2>
+                <div class="max-w-4xl mx-auto">
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">Query-Optimal IOPPs for Linear-Time Encodable Codes</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <a href="https://eprint.iacr.org/2025/1588" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">FICS and FACS: Fast IOPPs and Accumulation via Code-Switching</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <a href="https://eprint.iacr.org/2025/737" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
+                    </div>
+
+                    <div class="publication-item">
+                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
+                            <h3 class="text-lg">Scribe: Low-memory SNARKs via Read-Write Streaming</h3>
+                            <div class="flex-shrink-0 whitespace-nowrap">
+                                <a href="https://eprint.iacr.org/2024/1970" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Karan Newatia, Steve Wang</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaching Section -->
+        <section id="teaching" class="section">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center mb-6">Teaching</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="teaching-item">
+                        <h3 class="text-lg font-semibold mb-1">CIS 556: Cryptography</h3>
+                        <div class="flex justify-between items-baseline">
+                            <p class="text-gray-600">University of Pennsylvania, Teaching Assistant</p>
+                            <p class="text-sm text-gray-500">Spring 2025</p>
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <h3 class="text-lg font-semibold mb-1">CIS 677: Randomized Algorithms</h3>
+                        <div class="flex justify-between items-baseline">
+                            <p class="text-gray-600">University of Pennsylvania, Teaching Assistant</p>
+                            <p class="text-sm text-gray-500">Fall 2024</p>
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <h3 class="text-lg font-semibold mb-1">15-210: Parallel and Sequential Data Structures and Algorithms</h3>
+                        <div class="flex justify-between items-baseline">
+                            <p class="text-gray-600">Carnegie Mellon University, Head Teaching Assistant</p>
+                            <p class="text-sm text-gray-500">Spring 2020</p>
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <h3 class="text-lg font-semibold mb-1">15-151: Mathematical Foundations for Computer Science</h3>
+                        <div class="flex justify-between items-baseline">
+                            <p class="text-gray-600">Carnegie Mellon University, Teaching Assistant</p>
+                            <p class="text-sm text-gray-500">Fall 2019</p>
+                        </div>
+                    </div>
+                    <div class="teaching-item">
+                        <h3 class="text-lg font-semibold mb-1">15-122: Principle of Imperative Computation</h3>
+                        <div class="flex justify-between items-baseline">
+                            <p class="text-gray-600">Carnegie Mellon University, Teaching Assistant</p>
+                            <p class="text-sm text-gray-500">Spring 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-3">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Anubhav Baweja. Last updated: September 2025.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
