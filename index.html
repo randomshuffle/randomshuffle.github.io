@@ -1,242 +1,600 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Anubhav Baweja is a PhD student at the University of Pennsylvania working on cryptography, streaming algorithms, sublinear algorithms, and hash-based proof systems.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Anubhav Baweja">
+    <meta property="og:description" content="Research in cryptography, streaming algorithms, sublinear algorithms, and hash-based proof systems.">
+    <meta property="og:image" content="/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="profile:first_name" content="Anubhav">
+    <meta property="profile:last_name" content="Baweja">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Anubhav Baweja">
+    <meta name="twitter:description" content="Research in cryptography, streaming algorithms, sublinear algorithms, and hash-based proof systems.">
+    <meta name="twitter:image" content="/og.png">
     <title>Anubhav Baweja</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            scroll-behavior: smooth;
+    <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "./",
+          "name": "Anubhav Baweja",
+          "description": "Academic homepage of Anubhav Baweja, a PhD student working on cryptography, streaming algorithms, sublinear algorithms, and hash-based proof systems.",
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "contentUrl": "og.png",
+            "width": 1200,
+            "height": 630
+          },
+          "mainEntity": {"@id": "#person"}
+        },
+        {
+          "@type": "Person",
+          "@id": "#person",
+          "name": "Anubhav Baweja",
+          "image": "pic.jpg",
+          "jobTitle": "PhD Student",
+          "affiliation": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Pennsylvania",
+            "url": "https://www.upenn.edu/"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Carnegie Mellon University",
+            "url": "https://www.cmu.edu/"
+          },
+          "knowsAbout": [
+            "Cryptography",
+            "Streaming algorithms",
+            "Sublinear algorithms",
+            "Hash-based proof systems"
+          ],
+          "sameAs": [
+            "https://scholar.google.com/citations?user=Wt9N4FgAAAAJ&hl=en",
+            "https://dblp.org/pid/192/1642.html",
+            "https://www.linkedin.com/in/abaweja64"
+          ]
+        },
+        {
+          "@type": "Event",
+          "@id": "#event-zkproof-8",
+          "name": "zkProof 8",
+          "workFeatured": [
+            {"@id": "#paper-era"},
+            {"@id": "#paper-fics-facs"},
+            {"@id": "#paper-query-optimal"},
+            {"@id": "#paper-sumcheck"}
+          ],
+          "subjectOf": [
+            {
+              "@type": "VideoObject",
+              "name": "ERA Codes at zkProof 8",
+              "url": "https://www.youtube.com/watch?v=kM-x6nsgvr0",
+              "about": {"@id": "#paper-era"}
+            },
+            {
+              "@type": "VideoObject",
+              "name": "Sumcheck at zkProof 8",
+              "url": "https://www.youtube.com/watch?v=IQO7HvmxyuI",
+              "about": {"@id": "#paper-sumcheck"}
+            }
+          ]
+        },
+        {
+          "@type": "Event",
+          "@id": "#event-zksummit-14",
+          "name": "zkSummit 14",
+          "workFeatured": {"@id": "#paper-sumcheck"},
+          "subjectOf": {
+            "@type": "VideoObject",
+            "name": "Sumcheck at zkSummit 14",
+            "url": "https://www.youtube.com/watch?v=9ZXg3umGgXs",
+            "about": {"@id": "#paper-sumcheck"}
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-era",
+          "name": "Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes",
+          "headline": "Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Giacomo Fenzi"},
+            {"@type": "Person", "name": "Pratyush Mishra"},
+            {"@type": "Person", "name": "Tushar Mopuri"}
+          ],
+          "datePublished": "2026",
+          "identifier": "Cryptology ePrint Archive 2026/864",
+          "url": "https://eprint.iacr.org/2026/864",
+          "sameAs": "https://eprint.iacr.org/2026/864",
+          "isAccessibleForFree": true,
+          "creativeWorkStatus": "Preprint",
+          "keywords": ["SNARKs", "IOPPs", "ERA codes", "field-agnostic cryptography"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://eprint.iacr.org/2026/864.pdf"
+          },
+          "subjectOf": {
+            "@type": "VideoObject",
+            "name": "ERA Codes at zkProof 8",
+            "url": "https://www.youtube.com/watch?v=kM-x6nsgvr0"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-fics-facs",
+          "name": "FICS and FACS: Fast IOPPs and Accumulation via Code-Switching",
+          "headline": "FICS and FACS: Fast IOPPs and Accumulation via Code-Switching",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Pratyush Mishra"},
+            {"@type": "Person", "name": "Tushar Mopuri"},
+            {"@type": "Person", "name": "Matan Shtepel"}
+          ],
+          "datePublished": "2026",
+          "identifier": "Cryptology ePrint Archive 2025/737",
+          "url": "https://eprint.iacr.org/2025/737",
+          "sameAs": "https://eprint.iacr.org/2025/737",
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "CRYPTO 2026"},
+          "keywords": ["IOPPs", "accumulation schemes", "succinct arguments", "code-switching"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://eprint.iacr.org/2025/737.pdf"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-query-optimal",
+          "name": "Query-Optimal IOPPs for Linear-Time Encodable Codes",
+          "headline": "Query-Optimal IOPPs for Linear-Time Encodable Codes",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Pratyush Mishra"},
+            {"@type": "Person", "name": "Tushar Mopuri"},
+            {"@type": "Person", "name": "Matan Shtepel"}
+          ],
+          "datePublished": "2026",
+          "identifier": "Cryptology ePrint Archive 2025/1588",
+          "url": "https://eprint.iacr.org/2025/1588",
+          "sameAs": "https://eprint.iacr.org/2025/1588",
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "EUROCRYPT 2026"},
+          "keywords": ["IOPPs", "proofs of proximity", "succinct arguments", "query complexity"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://eprint.iacr.org/2025/1588.pdf"
+          },
+          "subjectOf": [
+            {
+              "@type": "VideoObject",
+              "name": "Query-Optimal IOPPs at EUROCRYPT 2026",
+              "url": "https://www.youtube.com/watch?v=PxrcsQlYd5k"
+            },
+            {
+              "@type": "MediaObject",
+              "name": "EUROCRYPT 2026 slides",
+              "encodingFormat": "application/pdf",
+              "contentUrl": "https://iacr.org/submit/files/slides/2026/eurocrypt/eurocrypt2026/169/169_slides.pdf"
+            }
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-scribe",
+          "name": "Scribe: Low-memory SNARKs via Read-Write Streaming",
+          "headline": "Scribe: Low-memory SNARKs via Read-Write Streaming",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Pratyush Mishra"},
+            {"@type": "Person", "name": "Tushar Mopuri"},
+            {"@type": "Person", "name": "Karan Newatia"},
+            {"@type": "Person", "name": "Steve Wang"}
+          ],
+          "datePublished": "2026",
+          "identifier": "Cryptology ePrint Archive 2024/1970",
+          "url": "https://eprint.iacr.org/2024/1970",
+          "sameAs": "https://eprint.iacr.org/2024/1970",
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "USENIX Security 2026"},
+          "keywords": ["SNARKs", "succinct arguments", "streaming", "low-memory proving"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://eprint.iacr.org/2024/1970.pdf"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-sumcheck",
+          "name": "Time-Space Trade-Offs for Sumcheck",
+          "headline": "Time-Space Trade-Offs for Sumcheck",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Alessandro Chiesa"},
+            {"@type": "Person", "name": "Elisabetta Fedele"},
+            {"@type": "Person", "name": "Giacomo Fenzi"},
+            {"@type": "Person", "name": "Pratyush Mishra"},
+            {"@type": "Person", "name": "Tushar Mopuri"},
+            {"@type": "Person", "name": "Andrew Zitek-Estrada"}
+          ],
+          "datePublished": "2025",
+          "identifier": "Cryptology ePrint Archive 2025/1473",
+          "url": "https://eprint.iacr.org/2025/1473",
+          "sameAs": "https://eprint.iacr.org/2025/1473",
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "TCC 2025"},
+          "keywords": ["sumcheck", "interactive proofs", "streaming", "time-space trade-offs"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://eprint.iacr.org/2025/1473.pdf"
+          },
+          "subjectOf": [
+            {
+              "@type": "VideoObject",
+              "name": "Sumcheck at zkProof 8",
+              "url": "https://www.youtube.com/watch?v=IQO7HvmxyuI"
+            },
+            {
+              "@type": "VideoObject",
+              "name": "Sumcheck at zkSummit 14",
+              "url": "https://www.youtube.com/watch?v=9ZXg3umGgXs"
+            },
+            {
+              "@type": "MediaObject",
+              "name": "TCC 2025 slides",
+              "encodingFormat": "application/pdf",
+              "contentUrl": "https://iacr.org/submit/files/slides/2025/tcc/tcc2025/215/215_slides.pdf"
+            }
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-average-distortion",
+          "name": "Average-Distortion Sketching",
+          "headline": "Average-Distortion Sketching",
+          "author": [
+            {"@type": "Person", "name": "Yiqiao Bao"},
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Nicolas Menand"},
+            {"@type": "Person", "name": "Erik Waingarten"},
+            {"@type": "Person", "name": "Nathan White"},
+            {"@type": "Person", "name": "Tian Zhang"}
+          ],
+          "datePublished": "2025",
+          "identifier": "arXiv:2411.05156",
+          "url": "https://arxiv.org/abs/2411.05156",
+          "sameAs": [
+            "https://arxiv.org/abs/2411.05156",
+            "https://doi.org/10.48550/arXiv.2411.05156"
+          ],
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "FOCS 2025"},
+          "keywords": ["metric sketching", "average distortion", "nearest-neighbor search"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://arxiv.org/pdf/2411.05156"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-tfas",
+          "name": "An Efficient Semi-Streaming PTAS for Tournament Feedback Arc Set with Few Passes",
+          "headline": "An Efficient Semi-Streaming PTAS for Tournament Feedback Arc Set with Few Passes",
+          "author": [
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Justin Jia"},
+            {"@type": "Person", "name": "David P. Woodruff"}
+          ],
+          "datePublished": "2022",
+          "identifier": "arXiv:2107.07141",
+          "url": "https://arxiv.org/abs/2107.07141",
+          "sameAs": [
+            "https://arxiv.org/abs/2107.07141",
+            "https://doi.org/10.48550/arXiv.2107.07141"
+          ],
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "ITCS 2022"},
+          "keywords": ["streaming algorithms", "approximation algorithms", "tournament feedback arc set"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://arxiv.org/pdf/2107.07141"
+          },
+          "subjectOf": {
+            "@type": "VideoObject",
+            "name": "Tournament Feedback Arc Set at ITCS 2022",
+            "url": "https://www.youtube.com/watch?v=xb1l97EeVpg"
+          }
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "#paper-self-adjusting",
+          "name": "Efficient Parallel Self-Adjusting Computation",
+          "headline": "Efficient Parallel Self-Adjusting Computation",
+          "author": [
+            {"@type": "Person", "name": "Daniel Anderson"},
+            {"@type": "Person", "name": "Guy E. Blelloch"},
+            {"@id": "#person"},
+            {"@type": "Person", "name": "Umut A. Acar"}
+          ],
+          "datePublished": "2021",
+          "identifier": "arXiv:2105.06712",
+          "url": "https://arxiv.org/abs/2105.06712",
+          "sameAs": [
+            "https://arxiv.org/abs/2105.06712",
+            "https://doi.org/10.48550/arXiv.2105.06712"
+          ],
+          "isAccessibleForFree": true,
+          "publication": {"@type": "PublicationEvent", "name": "SPAA 2021"},
+          "keywords": ["self-adjusting computation", "parallel algorithms", "dynamic algorithms"],
+          "encoding": {
+            "@type": "MediaObject",
+            "encodingFormat": "application/pdf",
+            "contentUrl": "https://arxiv.org/pdf/2105.06712"
+          }
         }
-        .section {
-            padding: 2rem 1rem;
-        }
-        .section:nth-of-type(even) {
-            background-color: #f9fafb; /* light gray */
-        }
-        .publication-item, .teaching-item {
-            border-left: 3px solid #3b82f6; /* blue-500 */
-            padding-left: 1.5rem;
-            margin-bottom: 1.25rem;
-        }
-    </style>
+      ]
+    }
+    </script>
 </head>
-<body class="bg-white text-gray-800">
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- Header & Navigation -->
-    <header class="bg-white sticky top-0 z-50 shadow-md">
-        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-800">
-                Anubhav Baweja
-            </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
-                <a href="#publications" class="text-gray-600 hover:text-blue-500 transition duration-300">Publications</a>
-                <a href="#preprints" class="text-gray-600 hover:text-blue-500 transition duration-300">Preprints</a>
-                <a href="#teaching" class="text-gray-600 hover:text-blue-500 transition duration-300">Teaching</a>
-            </div>
-            <!-- Mobile Menu Button (Optional) -->
-            <div class="md:hidden">
-                <!-- You can add a hamburger menu icon and logic here if needed -->
+    <header class="site-header">
+        <nav class="nav-shell" aria-label="Primary navigation">
+            <a class="site-name" href="#about">Anubhav Baweja</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#preprints">Preprints</a>
+                <a href="#publications">Publications</a>
+                <a href="#service">Service</a>
+                <a href="#teaching">Teaching</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
-                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
-                    <img src="pic.jpg" alt="Anubhav Baweja" class="rounded-full h-24 w-48 md:h-64 md:w-64 object-cover shadow-lg">
+    <main id="main-content">
+        <section class="hero" id="about" aria-labelledby="about-heading">
+            <div class="page-shell hero-grid">
+                <div class="portrait-wrap">
+                    <img class="portrait" src="pic.jpg" alt="Portrait of Anubhav Baweja" width="240" height="240">
                 </div>
-                <div class="md:w-2/3 md:pl-12">
-                    <h1 class="text-3xl font-bold mb-2">Anubhav Baweja</h1>
-                    <p class="text-base mb-3">
-                        I am a PhD student at University of Pennsylvania, advised by <a href="https://pratyushmishra.com/" class="text-blue-600 hover:underline">Pratyush Mishra</a> and <a href="https://www.cis.upenn.edu/~kannan/" class="text-blue-600 hover:underline">Sampath Kannan</a>.
-                        My research interests lie at the intersection of cryptography, streaming algorithms, and sublinear algorithms.
-                        A lot of my recent work has focused on hash-based proof systems.
+                <div class="hero-copy">
+                    <h1 id="about-heading">Anubhav Baweja</h1>
+                    <p>
+                        I am a PhD student at the University of Pennsylvania, advised by
+                        <a href="https://pratyushmishra.com/">Pratyush Mishra</a> and
+                        <a href="https://www.cis.upenn.edu/~kannan/">Sampath Kannan</a>.
+                        My research interests lie at the intersection of cryptography,
+                        streaming algorithms, and sublinear algorithms. Much of my recent
+                        work has focused on hash-based proof systems.
                     </p>
-                    <p class="text-base mb-3">
-                        I obtained my BS and MS in computer science from Carnegie Mellon University in 2021, where I was advised by <a href="https://www.cs.cmu.edu/~dwoodruf/" class="text-blue-600 hover:underline">David Woodruff</a> and <a href="https://www.cs.cmu.edu/~guyb/" class="text-blue-600 hover:underline">Guy Blelloch</a>.
-                        Before starting my PhD, I worked at Citadel Securities as a quantitative research analyst for two years.
+                    <p>
+                        I obtained my BS and MS in computer science from Carnegie Mellon
+                        University in 2021, where I was advised by
+                        <a href="https://www.cs.cmu.edu/~dwoodruf/">David Woodruff</a> and
+                        <a href="https://www.cs.cmu.edu/~guyb/">Guy Blelloch</a>. Before
+                        starting my PhD, I worked at Citadel Securities as a quantitative
+                        research analyst for two years.
                     </p>
-                    <div class="flex space-x-4">
-                        <a href="https://scholar.google.com/citations?user=Wt9N4FgAAAAJ&hl=en" class="text-blue-600 hover:underline">Google Scholar</a>
-                        <a href="https://dblp.org/pid/192/1642.html" class="text-blue-600 hover:underline">DBLP</a>
-                        <a href="https://www.linkedin.com/in/abaweja64" class="text-blue-600 hover:underline">LinkedIn</a>
-                    </div>
-                    <p class="mt-4 font-mono text-gray-700">abaweja [at] upenn [dot] edu</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Preprints Section -->
-        <section id="preprints" class="section bg-white">
-            <div class="container mx-auto px-6">
-                <h2 class="text-2xl font-bold text-center mb-6">Preprints</h2>
-                <div class="max-w-4xl mx-auto">
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <a href="https://eprint.iacr.org/2026/864" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="section">
-            <div class="container mx-auto px-6">
-                <h2 class="text-2xl font-bold text-center mb-6">Publications</h2>
-                <div class="max-w-4xl mx-auto">
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">FICS and FACS: Fast IOPPs and Accumulation via Code-Switching</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[CRYPTO 2026]</span>
-                                <a href="https://eprint.iacr.org/2025/737" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">Query-Optimal IOPPs for Linear-Time Encodable Codes</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[EUROCRYPT 2026]</span>
-                                <a href="https://eprint.iacr.org/2025/1588" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">Scribe: Low-memory SNARKs via Read-Write Streaming</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[USENIX Security 2026]</span>
-                                <a href="https://eprint.iacr.org/2024/1970" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Karan Newatia, Steve Wang</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">Time-Space Trade-Offs for Sumcheck</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[TCC 2025]</span>
-                                <a href="https://eprint.iacr.org/2025/1473" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Alessandro Chiesa, Elisabetta Fedele, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri, Andrew Zitek-Estrada</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">Average-Distortion Sketching</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[FOCS 2025]</span>
-                                <a href="https://arxiv.org/abs/2411.05156" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1">Yiqiao Bao, <strong>Anubhav Baweja</strong>, Nicolas Menand, Erik Waingarten, Nathan White, Tian Zhang</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                            <h3 class="text-lg">An Efficient Semi-Streaming PTAS for Tournament Feedback Arc Set with Few Passes</h3>
-                            <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[ITCS 2022]</span>
-                                <a href="https://arxiv.org/abs/2107.07141" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1"><strong>Anubhav Baweja</strong>, Justin Jia, David Woodruff</p>
-                    </div>
-
-                    <div class="publication-item">
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-x-2">
-                             <h3 class="text-lg">Efficient parallel self-adjusting computation</h3>
-                             <div class="flex-shrink-0 whitespace-nowrap">
-                                <span class="text-md text-gray-700 font-medium">[SPAA 2021]</span>
-                                <a href="https://arxiv.org/abs/2105.06712" class="text-blue-600 hover:underline font-medium ml-3">[ePrint]</a>
-                            </div>
-                        </div>
-                        <p class="text-gray-600 mt-1">Daniel Anderson, Guy Blelloch, <strong>Anubhav Baweja</strong>, Umut Acar</p>
+                    <div class="profile-links" aria-label="Profiles and contact">
+                        <a href="https://scholar.google.com/citations?user=Wt9N4FgAAAAJ&amp;hl=en">Google Scholar</a>
+                        <a href="https://dblp.org/pid/192/1642.html">DBLP</a>
+                        <a href="https://www.linkedin.com/in/abaweja64">LinkedIn</a>
+                        <span class="email">abaweja [at] upenn [dot] edu</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Teaching Section -->
-        <section id="teaching" class="section">
-            <div class="container mx-auto px-6">
-                <h2 class="text-2xl font-bold text-center mb-6">Teaching</h2>
-                <div class="max-w-4xl mx-auto">
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">CIS 556: Cryptography</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">University of Pennsylvania, Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Spring 2026</p>
+        <section class="section" id="preprints" aria-labelledby="preprints-heading">
+            <div class="content-shell">
+                <header class="section-heading">
+                    <h2 id="preprints-heading">Preprints</h2>
+                </header>
+
+                <div class="publication-list">
+                    <article class="publication" id="era-codes">
+                        <h3>Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes</h3>
+                        <div class="paper-meta">
+                            <a href="https://eprint.iacr.org/2026/864">ePrint</a>
+                            <a href="https://eprint.iacr.org/2026/864.pdf">PDF</a>
                         </div>
-                    </div>
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">CIS 556: Cryptography</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">University of Pennsylvania, Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Spring 2025</p>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri</p>
+                        <p class="presentations">
+                            <span class="meta-label">Presented at</span>
+                            <a href="https://www.youtube.com/watch?v=kM-x6nsgvr0">zkProof 8 video</a>
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="publications" aria-labelledby="publications-heading">
+            <div class="content-shell">
+                <header class="section-heading">
+                    <h2 id="publications-heading">Publications</h2>
+                </header>
+
+                <div class="publication-list">
+                    <article class="publication" id="fics-facs">
+                        <h3>FICS and FACS: Fast IOPPs and Accumulation via Code-Switching</h3>
+                        <div class="paper-meta">
+                            <span class="venue">CRYPTO 2026</span>
+                            <a href="https://eprint.iacr.org/2025/737">ePrint</a>
+                            <a href="https://eprint.iacr.org/2025/737.pdf">PDF</a>
                         </div>
-                    </div>
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">CIS 677: Randomized Algorithms</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">University of Pennsylvania, Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Fall 2024</p>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
+                        <p class="presentations">
+                            <span class="meta-label">Presented at</span>
+                            <span>zkProof 8</span>
+                        </p>
+                    </article>
+
+                    <article class="publication" id="query-optimal">
+                        <h3>Query-Optimal IOPPs for Linear-Time Encodable Codes</h3>
+                        <div class="paper-meta">
+                            <span class="venue">EUROCRYPT 2026</span>
+                            <a href="https://eprint.iacr.org/2025/1588">ePrint</a>
+                            <a href="https://eprint.iacr.org/2025/1588.pdf">PDF</a>
                         </div>
-                    </div>
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">15-210: Parallel and Sequential Data Structures and Algorithms</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">Carnegie Mellon University, Head Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Spring 2020</p>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
+                        <p class="presentations">
+                            <span class="meta-label">Presented at</span>
+                            <span>zkProof 8</span>
+                            <a href="https://www.youtube.com/watch?v=PxrcsQlYd5k">EUROCRYPT 2026 video</a>
+                            <a href="https://iacr.org/submit/files/slides/2026/eurocrypt/eurocrypt2026/169/169_slides.pdf">slides</a>
+                        </p>
+                    </article>
+
+                    <article class="publication" id="scribe">
+                        <h3>Scribe: Low-memory SNARKs via Read-Write Streaming</h3>
+                        <div class="paper-meta">
+                            <span class="venue">USENIX Security 2026</span>
+                            <a href="https://eprint.iacr.org/2024/1970">ePrint</a>
+                            <a href="https://eprint.iacr.org/2024/1970.pdf">PDF</a>
                         </div>
-                    </div>
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">15-151: Mathematical Foundations for Computer Science</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">Carnegie Mellon University, Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Fall 2019</p>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Karan Newatia, Steve Wang</p>
+                    </article>
+
+                    <article class="publication" id="sumcheck">
+                        <h3>Time-Space Trade-Offs for Sumcheck</h3>
+                        <div class="paper-meta">
+                            <span class="venue">TCC 2025</span>
+                            <a href="https://eprint.iacr.org/2025/1473">ePrint</a>
+                            <a href="https://eprint.iacr.org/2025/1473.pdf">PDF</a>
                         </div>
-                    </div>
-                    <div class="teaching-item">
-                        <h3 class="text-lg font-medium mb-1">15-122: Principle of Imperative Computation</h3>
-                        <div class="flex justify-between items-baseline">
-                            <p class="text-gray-600">Carnegie Mellon University, Teaching Assistant</p>
-                            <p class="text-sm text-gray-500">Spring 2018</p>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Alessandro Chiesa, Elisabetta Fedele, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri, Andrew Zitek-Estrada</p>
+                        <p class="presentations">
+                            <span class="meta-label">Presented at</span>
+                            <a href="https://www.youtube.com/watch?v=IQO7HvmxyuI">zkProof 8 video</a>
+                            <a href="https://www.youtube.com/watch?v=9ZXg3umGgXs">zkSummit 14 video</a>
+                            <a href="https://iacr.org/submit/files/slides/2025/tcc/tcc2025/215/215_slides.pdf">TCC 2025 slides</a>
+                        </p>
+                    </article>
+
+                    <article class="publication" id="average-distortion">
+                        <h3>Average-Distortion Sketching</h3>
+                        <div class="paper-meta">
+                            <span class="venue">FOCS 2025</span>
+                            <a href="https://arxiv.org/abs/2411.05156">arXiv</a>
+                            <a href="https://arxiv.org/pdf/2411.05156">PDF</a>
                         </div>
-                    </div>
+                        <p class="authors">Yiqiao Bao, <strong>Anubhav Baweja</strong>, Nicolas Menand, Erik Waingarten, Nathan White, Tian Zhang</p>
+                    </article>
+
+                    <article class="publication" id="tournament-feedback">
+                        <h3>An Efficient Semi-Streaming PTAS for Tournament Feedback Arc Set with Few Passes</h3>
+                        <div class="paper-meta">
+                            <span class="venue">ITCS 2022</span>
+                            <a href="https://arxiv.org/abs/2107.07141">arXiv</a>
+                            <a href="https://arxiv.org/pdf/2107.07141">PDF</a>
+                        </div>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Justin Jia, David Woodruff</p>
+                        <p class="presentations">
+                            <span class="meta-label">Presented at</span>
+                            <a href="https://www.youtube.com/watch?v=xb1l97EeVpg">ITCS 2022 video</a>
+                        </p>
+                    </article>
+
+                    <article class="publication" id="self-adjusting">
+                        <h3>Efficient Parallel Self-Adjusting Computation</h3>
+                        <div class="paper-meta">
+                            <span class="venue">SPAA 2021</span>
+                            <a href="https://arxiv.org/abs/2105.06712">arXiv</a>
+                            <a href="https://arxiv.org/pdf/2105.06712">PDF</a>
+                        </div>
+                        <p class="authors">Daniel Anderson, Guy Blelloch, <strong>Anubhav Baweja</strong>, Umut Acar</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section compact-section" id="service" aria-labelledby="service-heading">
+            <div class="content-shell">
+                <header class="section-heading">
+                    <h2 id="service-heading">Service</h2>
+                </header>
+                <p class="service-copy">
+                    External subreviewer for STOC 2024, ICALP 2024, APPROX 2024,
+                    CRYPTO 2025 and 2026, TCC 2026, and ASIACRYPT 2026.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="teaching" aria-labelledby="teaching-heading">
+            <div class="content-shell">
+                <header class="section-heading">
+                    <h2 id="teaching-heading">Teaching</h2>
+                </header>
+                <div class="teaching-list">
+                    <article class="teaching-item">
+                        <div>
+                            <h3>CIS 556: Cryptography</h3>
+                            <p>University of Pennsylvania · Teaching Assistant</p>
+                        </div>
+                        <time datetime="2026-01">Spring 2026</time>
+                    </article>
+                    <article class="teaching-item">
+                        <div>
+                            <h3>CIS 556: Cryptography</h3>
+                            <p>University of Pennsylvania · Teaching Assistant</p>
+                        </div>
+                        <time datetime="2025-01">Spring 2025</time>
+                    </article>
+                    <article class="teaching-item">
+                        <div>
+                            <h3>CIS 677: Randomized Algorithms</h3>
+                            <p>University of Pennsylvania · Teaching Assistant</p>
+                        </div>
+                        <time datetime="2024-09">Fall 2024</time>
+                    </article>
+                    <article class="teaching-item">
+                        <div>
+                            <h3>15-210: Parallel and Sequential Data Structures and Algorithms</h3>
+                            <p>Carnegie Mellon University · Head Teaching Assistant</p>
+                        </div>
+                        <time datetime="2020-01">Spring 2020</time>
+                    </article>
+                    <article class="teaching-item">
+                        <div>
+                            <h3>15-151: Mathematical Foundations for Computer Science</h3>
+                            <p>Carnegie Mellon University · Teaching Assistant</p>
+                        </div>
+                        <time datetime="2019-09">Fall 2019</time>
+                    </article>
+                    <article class="teaching-item">
+                        <div>
+                            <h3>15-122: Principles of Imperative Computation</h3>
+                            <p>Carnegie Mellon University · Teaching Assistant</p>
+                        </div>
+                        <time datetime="2018-01">Spring 2018</time>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-3">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2026 Anubhav Baweja. Last updated: May 2026.</p>
+
+    <footer class="site-footer">
+        <div class="page-shell">
+            <p>© 2026 Anubhav Baweja</p>
+            <p>Last updated July 2026</p>
         </div>
     </footer>
-
 </body>
 </html>
-
