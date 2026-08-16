@@ -271,7 +271,7 @@ h1 {
 .venue {
     padding: 0.12rem 0.5rem;
     border-radius: 999px;
-    background: var(--accent-dark);
+    background: #2f6fab;
     color: #ffffff;
     font-size: 0.74rem;
     font-weight: 760;
@@ -280,17 +280,47 @@ h1 {
     text-transform: uppercase;
 }
 
-.presentations {
+.award {
+    padding: 0.12rem 0.5rem;
+    border: 1px solid #a8d9b4;
+    border-radius: 999px;
+    background: #e4f5e8;
+    color: #23633a;
+    font-size: 0.74rem;
+    font-weight: 720;
+    letter-spacing: 0.025em;
+    line-height: 1.55;
+}
+
+.appearance-note,
+.materials {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    gap: 0.3rem 0.9rem;
+    gap: 0.25rem 0.35rem;
     margin: 0.35rem 0 0;
     color: var(--muted);
     font-size: 0.86rem;
 }
 
-.presentations a {
+.appearance-note {
+    display: block;
+}
+
+.featured-venue {
+    padding: 0.03rem 0.28rem;
+    border-radius: 0.22rem;
+    background: #edf4fa;
+    color: #285d88;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.materials {
+    gap-inline: 0.9rem;
+}
+
+.materials a {
     font-weight: 600;
 }
 
@@ -426,7 +456,7 @@ h1 {
     }
 
     .paper-meta,
-    .presentations {
+    .materials {
         gap-inline: 0.8rem;
     }
 

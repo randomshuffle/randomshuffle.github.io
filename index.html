@@ -72,6 +72,7 @@
             {"@id": "#paper-era"},
             {"@id": "#paper-fics-facs"},
             {"@id": "#paper-query-optimal"},
+            {"@id": "#paper-scribe"},
             {"@id": "#paper-sumcheck"}
           ],
           "subjectOf": [
@@ -88,6 +89,12 @@
               "about": {"@id": "#paper-sumcheck"}
             }
           ]
+        },
+        {
+          "@type": "Event",
+          "@id": "#event-zksummit-11",
+          "name": "zkSummit 11",
+          "workFeatured": {"@id": "#paper-scribe"}
         },
         {
           "@type": "Event",
@@ -117,7 +124,7 @@
           "url": "https://eprint.iacr.org/2026/864",
           "sameAs": "https://eprint.iacr.org/2026/864",
           "isAccessibleForFree": true,
-          "creativeWorkStatus": "Preprint",
+          "publication": {"@type": "PublicationEvent", "name": "ASIACRYPT 2026"},
           "keywords": ["SNARKs", "IOPPs", "ERA codes", "field-agnostic cryptography"],
           "encoding": {
             "@type": "MediaObject",
@@ -209,6 +216,7 @@
           "sameAs": "https://eprint.iacr.org/2024/1970",
           "isAccessibleForFree": true,
           "publication": {"@type": "PublicationEvent", "name": "USENIX Security 2026"},
+          "award": "Distinguished Paper Runner-Up",
           "keywords": ["SNARKs", "succinct arguments", "streaming", "low-memory proving"],
           "encoding": {
             "@type": "MediaObject",
@@ -360,7 +368,6 @@
             <a class="site-name" href="#about">Anubhav Baweja</a>
             <div class="nav-links">
                 <a href="#about">About</a>
-                <a href="#preprints">Preprints</a>
                 <a href="#publications">Publications</a>
                 <a href="#service">Service</a>
                 <a href="#teaching">Teaching</a>
@@ -402,29 +409,6 @@
             </div>
         </section>
 
-        <section class="section" id="preprints" aria-labelledby="preprints-heading">
-            <div class="content-shell">
-                <header class="section-heading">
-                    <h2 id="preprints-heading">Preprints</h2>
-                </header>
-
-                <div class="publication-list">
-                    <article class="publication" id="era-codes">
-                        <h3>Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes</h3>
-                        <div class="paper-meta">
-                            <a href="https://eprint.iacr.org/2026/864">ePrint</a>
-                            <a href="https://eprint.iacr.org/2026/864.pdf">PDF</a>
-                        </div>
-                        <p class="authors"><strong>Anubhav Baweja</strong>, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri</p>
-                        <p class="presentations">
-                            <span class="meta-label">Presented at</span>
-                            <a href="https://www.youtube.com/watch?v=kM-x6nsgvr0">zkProof 8 video</a>
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
         <section class="section" id="publications" aria-labelledby="publications-heading">
             <div class="content-shell">
                 <header class="section-heading">
@@ -432,17 +416,32 @@
                 </header>
 
                 <div class="publication-list">
+                    <article class="publication" id="era-codes">
+                        <h3>Field-Agnostic SNARKs with Small Proofs via Encode-Repeat-Accumulate (ERA) Codes</h3>
+                        <div class="paper-meta">
+                            <span class="venue">ASIACRYPT 2026</span>
+                            <a href="https://eprint.iacr.org/2026/864">ePrint</a>
+                            <a href="https://github.com/WizardOfMenlo/agnostir/">Code</a>
+                        </div>
+                        <p class="authors"><strong>Anubhav Baweja</strong>, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri</p>
+                        <p class="appearance-note">
+                            Also appeared at <span class="featured-venue">zkProof 8</span>
+                        </p>
+                        <p class="materials">
+                            <span class="meta-label">Materials:</span>
+                            <a href="https://www.youtube.com/watch?v=kM-x6nsgvr0">Talk at zkProof 8</a>
+                        </p>
+                    </article>
+
                     <article class="publication" id="fics-facs">
                         <h3>FICS and FACS: Fast IOPPs and Accumulation via Code-Switching</h3>
                         <div class="paper-meta">
                             <span class="venue">CRYPTO 2026</span>
                             <a href="https://eprint.iacr.org/2025/737">ePrint</a>
-                            <a href="https://eprint.iacr.org/2025/737.pdf">PDF</a>
                         </div>
                         <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
-                        <p class="presentations">
-                            <span class="meta-label">Presented at</span>
-                            <span>zkProof 8</span>
+                        <p class="appearance-note">
+                            Also appeared at <span class="featured-venue">zkProof 8</span>
                         </p>
                     </article>
 
@@ -451,14 +450,15 @@
                         <div class="paper-meta">
                             <span class="venue">EUROCRYPT 2026</span>
                             <a href="https://eprint.iacr.org/2025/1588">ePrint</a>
-                            <a href="https://eprint.iacr.org/2025/1588.pdf">PDF</a>
                         </div>
                         <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Matan Shtepel</p>
-                        <p class="presentations">
-                            <span class="meta-label">Presented at</span>
-                            <span>zkProof 8</span>
-                            <a href="https://www.youtube.com/watch?v=PxrcsQlYd5k">EUROCRYPT 2026 video</a>
-                            <a href="https://iacr.org/submit/files/slides/2026/eurocrypt/eurocrypt2026/169/169_slides.pdf">slides</a>
+                        <p class="appearance-note">
+                            Also appeared at <span class="featured-venue">zkProof 8</span>
+                        </p>
+                        <p class="materials">
+                            <span class="meta-label">Materials:</span>
+                            <a href="https://www.youtube.com/watch?v=PxrcsQlYd5k">Talk at EUROCRYPT 2026</a>
+                            <a href="https://iacr.org/submit/files/slides/2026/eurocrypt/eurocrypt2026/169/169_slides.pdf">EUROCRYPT 2026 Slides</a>
                         </p>
                     </article>
 
@@ -466,10 +466,14 @@
                         <h3>Scribe: Low-memory SNARKs via Read-Write Streaming</h3>
                         <div class="paper-meta">
                             <span class="venue">USENIX Security 2026</span>
+                            <span class="award">Distinguished Paper Runner-Up</span>
                             <a href="https://eprint.iacr.org/2024/1970">ePrint</a>
-                            <a href="https://eprint.iacr.org/2024/1970.pdf">PDF</a>
+                            <a href="https://github.com/Pratyush/scribe-system">Code</a>
                         </div>
                         <p class="authors"><strong>Anubhav Baweja</strong>, Pratyush Mishra, Tushar Mopuri, Karan Newatia, Steve Wang</p>
+                        <p class="appearance-note">
+                            Also appeared at <span class="featured-venue">zkProof 8</span> and <span class="featured-venue">zkSummit 11</span>
+                        </p>
                     </article>
 
                     <article class="publication" id="sumcheck">
@@ -477,14 +481,17 @@
                         <div class="paper-meta">
                             <span class="venue">TCC 2025</span>
                             <a href="https://eprint.iacr.org/2025/1473">ePrint</a>
-                            <a href="https://eprint.iacr.org/2025/1473.pdf">PDF</a>
+                            <a href="https://github.com/compsec-epfl/efficient-sumcheck">Code</a>
                         </div>
                         <p class="authors"><strong>Anubhav Baweja</strong>, Alessandro Chiesa, Elisabetta Fedele, Giacomo Fenzi, Pratyush Mishra, Tushar Mopuri, Andrew Zitek-Estrada</p>
-                        <p class="presentations">
-                            <span class="meta-label">Presented at</span>
-                            <a href="https://www.youtube.com/watch?v=IQO7HvmxyuI">zkProof 8 video</a>
-                            <a href="https://www.youtube.com/watch?v=9ZXg3umGgXs">zkSummit 14 video</a>
-                            <a href="https://iacr.org/submit/files/slides/2025/tcc/tcc2025/215/215_slides.pdf">TCC 2025 slides</a>
+                        <p class="appearance-note">
+                            Also appeared at <span class="featured-venue">zkProof 8</span> and <span class="featured-venue">zkSummit 14</span>
+                        </p>
+                        <p class="materials">
+                            <span class="meta-label">Materials:</span>
+                            <a href="https://www.youtube.com/watch?v=IQO7HvmxyuI">Talk at zkProof 8</a>
+                            <a href="https://www.youtube.com/watch?v=9ZXg3umGgXs">Talk at zkSummit 14</a>
+                            <a href="https://iacr.org/submit/files/slides/2025/tcc/tcc2025/215/215_slides.pdf">TCC 2025 Slides</a>
                         </p>
                     </article>
 
@@ -493,7 +500,6 @@
                         <div class="paper-meta">
                             <span class="venue">FOCS 2025</span>
                             <a href="https://arxiv.org/abs/2411.05156">arXiv</a>
-                            <a href="https://arxiv.org/pdf/2411.05156">PDF</a>
                         </div>
                         <p class="authors">Yiqiao Bao, <strong>Anubhav Baweja</strong>, Nicolas Menand, Erik Waingarten, Nathan White, Tian Zhang</p>
                     </article>
@@ -503,12 +509,11 @@
                         <div class="paper-meta">
                             <span class="venue">ITCS 2022</span>
                             <a href="https://arxiv.org/abs/2107.07141">arXiv</a>
-                            <a href="https://arxiv.org/pdf/2107.07141">PDF</a>
                         </div>
                         <p class="authors"><strong>Anubhav Baweja</strong>, Justin Jia, David Woodruff</p>
-                        <p class="presentations">
-                            <span class="meta-label">Presented at</span>
-                            <a href="https://www.youtube.com/watch?v=xb1l97EeVpg">ITCS 2022 video</a>
+                        <p class="materials">
+                            <span class="meta-label">Materials:</span>
+                            <a href="https://www.youtube.com/watch?v=xb1l97EeVpg">Talk at ITCS 2022</a>
                         </p>
                     </article>
 
@@ -517,7 +522,6 @@
                         <div class="paper-meta">
                             <span class="venue">SPAA 2021</span>
                             <a href="https://arxiv.org/abs/2105.06712">arXiv</a>
-                            <a href="https://arxiv.org/pdf/2105.06712">PDF</a>
                         </div>
                         <p class="authors">Daniel Anderson, Guy Blelloch, <strong>Anubhav Baweja</strong>, Umut Acar</p>
                     </article>
@@ -593,7 +597,7 @@
     <footer class="site-footer">
         <div class="page-shell">
             <p>© 2026 Anubhav Baweja</p>
-            <p>Last updated July 2026</p>
+            <p>Last updated August 2026</p>
         </div>
     </footer>
 </body>
